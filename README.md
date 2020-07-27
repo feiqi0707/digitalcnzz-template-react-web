@@ -27,7 +27,7 @@ secure: true
 configName: '.alioss',
 enabled: true,
 cdnPrefix: 'https://cdn.digitalcnzz.com/',
-uploadPath: '/digitalcnzz/pretest/digitalcnzz-xxx-h5', //// 发布前把 xxxx 换成当前项目的名称
+uploadPath: '/digitalcnzz/pretest/digitalcnzz-xxx-web', //// 发布前把 xxxx 换成当前项目的名称
 exclude: '',
 ignoreHtml: false
 }
@@ -43,7 +43,7 @@ secure: true
 configName: '.alioss',
 enabled: true,
 cdnPrefix: 'https://cdn.digitalcnzz.com/',
-uploadPath: '/digitalcnzz/prod/digitalcnzz-xxx-h5', //// 发布前把 xxxx 换成当前项目的名称
+uploadPath: '/digitalcnzz/prod/digitalcnzz-xxx-web', //// 发布前把 xxxx 换成当前项目的名称
 exclude: '',
 ignoreHtml: false
 }
