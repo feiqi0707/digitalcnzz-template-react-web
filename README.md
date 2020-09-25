@@ -1,6 +1,6 @@
-# digitalzz-webFront-mobile
+# digitalzz-webFront-web
 
-前端项目移动端模板
+数字郑州前端项目 Vue-React 模板
 
 # 安装依赖环境
 
@@ -33,17 +33,3 @@ ignoreHtml: false
 }
 
 ## 生产环境配置
-
-const ossPluginOpt = {
-ossConfig: {
-region: 'oss-cn-north-2-gov-1',
-bucket: 'digitalzz',
-secure: true
-},
-configName: '.alioss',
-enabled: true,
-cdnPrefix: 'https://cdn.digitalcnzz.com/',
-uploadPath: '/digitalcnzz/prod/digitalcnzz-xxx-web', //// 发布前把 xxxx 换成当前项目的名称
-exclude: '',
-ignoreHtml: false
-}
