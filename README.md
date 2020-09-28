@@ -14,22 +14,46 @@ yarn dev 、 npm run dev
 
 yarn build:prod 、yarn build:test 、 npm run build:prod 、 npm run build:test
 
-# 构建发布配置 OSS 自动上传配置
+## 分支说明
 
-## 预发测试环境配置 vue.config.js
+#### master
 
-const ossPluginOpt = {
-ossConfig: {
-region: 'oss-cn-north-2-gov-1',
-bucket: 'digitalzz',
-secure: true
-},
-configName: '.alioss',
-enabled: true,
-cdnPrefix: 'https://cdn.digitalcnzz.com/',
-uploadPath: '/digitalcnzz/pretest/digitalcnzz-xxx-web', //// 发布前把 xxxx 换成当前项目的名称
-exclude: '',
-ignoreHtml: false
-}
+主分支，应该只有管理人员有权限
 
-## 生产环境配置
+#### master_dev
+
+研发环境
+
+#### master_test
+
+测试环境
+
+#### master_pre
+
+预发布环境
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```
+
+## Git 提交规范
+
+- feat ：新功能
+- fix ：修复 bug
+- chore ：对构建或者辅助工具的更改
+- refactor ：既不是修复 bug 也不是添加新功能的代码更改
+- style ：不影响代码含义的更改 (例如空格、格式化、少了分号)
+- docs ：只是文档的更改
+- perf ：提高性能的代码更改
+- revert ：撤回提交
+- test ：添加或修正测试
+
+## PS
+
+> 为了项目的健康迭代，所有参与开发的人员都应该由始至终的考虑性能优化，并尽可能的添加类型约束以减少 bug 率以及方便后面的维护。

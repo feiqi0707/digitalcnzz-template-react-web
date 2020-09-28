@@ -1,9 +1,8 @@
-/node_modules
-*.log
-/build
-/built
-.DS_Store
-.reviewboardrc
-/rev
-/.vscode
-/.idea
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+.umi
+.umi-production
+.umi-test
