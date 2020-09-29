@@ -5,25 +5,25 @@ import { history } from 'umi';
 import zhCN from 'antd/es/locale/zh_CN';
 import { ConfigProvider } from 'antd';
 
-// import { getMenuData } from "@ant-design/pro-layout";
+import { getMenuData } from '@ant-design/pro-layout';
 
 /** 组件--antd优先 */
 import { RightRender } from '@/layouts';
 
 /** 本地utils、模块 */
-// import router from "@/router";
+import router from '@/router';
 import logo from '@/assets/logo-small.png';
 import { getRoutePathMap } from '@/utils/getMap';
 import defaultSettings, { DefaultSettings } from '../config/defaultSettings';
 
-// const { breadcrumb } = getMenuData(router);
+const { breadcrumb } = getMenuData(router);
 
 /** const/let声明 */
 /** 运行时配置文件，可以在这里扩展运行时的能力，比如修改路由、修改 render 方法等。 */
 /** layout配置/操作，需要在配置文件开启layout */
 export let layout: any = {
   logo, // 产品 Logo
-  name: '后台管理系统', // 侧边栏头部产品名，默认值为包名
+  name: '智慧大中专生参保缴费管理平台', // 侧边栏头部产品名，默认值为包名
   // locale: true,
   // pure: true, // 是否删除框架layout
   // menu: {
@@ -43,20 +43,20 @@ export let layout: any = {
   //   return <h1>biaoti</h1>
   // },
   breadcrumbRender: (route: any) => {
-    // let hash: string | string[] = location.hash.split("#");
-    // hash = hash[1] || hash[0] || hash;
-    // console.log(hash,breadcrumb);
-    // let thisRoute;
-    // for (const key in breadcrumb) {
-    //   if (key === hash) {
-    //     thisRoute = {
-    //       path: breadcrumb[key].path,
-    //       breadcrumbName: breadcrumb[key].name || breadcrumb[key].title,
-    //     };
-    //     break;
-    //   }
-    // }
-    // console.log(thisRoute);
+    let hash: string | string[] = location.hash.split('#');
+    hash = hash[1] || hash[0] || hash;
+    console.log(hash, breadcrumb);
+    let thisRoute;
+    for (const key in breadcrumb) {
+      if (key === hash) {
+        thisRoute = {
+          path: breadcrumb[key].path,
+          breadcrumbName: breadcrumb[key].name || breadcrumb[key].title,
+        };
+        break;
+      }
+    }
+    console.log(thisRoute);
 
     let str = '';
     route &&
@@ -128,7 +128,7 @@ export function onRouteChange({
   action: any;
 }) {
   // 页面title配置
-  document.title = '后台管理后台管理系统';
+  document.title = '智慧大中专生参保缴费管理平台';
   // console.log(location, routes);
   try {
     const { pathname } = location;

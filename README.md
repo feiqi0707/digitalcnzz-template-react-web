@@ -32,15 +32,11 @@ yarn build:prod 、yarn build:test 、 npm run build:prod 、 npm run build:test
 
 预发布环境
 
-```bash
-$ yarn
-```
+yarn
 
 Start the dev server,
 
-```bash
-$ yarn start
-```
+yarn start
 
 ## Git 提交规范
 
