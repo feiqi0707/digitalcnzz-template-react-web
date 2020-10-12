@@ -27,4 +27,11 @@ export default {
       pathRewrite: { '^': '' },
     },
   },
+  prod: {
+    '/api/': {
+      target: 'https://10.2.2.2',
+      changeOrigin: true,
+      pathRewrite: { '^': '' },
+    },
+  },
 };

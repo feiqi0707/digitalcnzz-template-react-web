@@ -2,9 +2,9 @@
  * 自定义hooks
  * 把单选、勾选、反勾选逻辑抽离
  */
-import { useReducer } from "react";
-import { CheckItemType, ActionType } from "./hook_types";
-import { CHECKED_CHANGE, CHECKED_ALL_CHANGE } from "./hook_constant";
+import { useReducer } from 'react';
+import { CheckItemType, ActionType } from './hook_types';
+import { CHECKED_CHANGE, CHECKED_ALL_CHANGE } from './hook_constant';
 
 function reducer(state: CheckItemType[], action: ActionType) {
   const { type, payload } = action;
@@ -30,7 +30,7 @@ function reducer(state: CheckItemType[], action: ActionType) {
 export const useChecked = (list: CheckItemType[]) => {
   const [newCheckedList, dispatch] = useReducer(reducer, list);
   const checkedLength = newCheckedList.filter(
-    (item: CheckItemType) => !item.checked
+    (item: CheckItemType) => !item.checked,
   ).length;
   let checkedAll = false;
   if (checkedLength === 0) {

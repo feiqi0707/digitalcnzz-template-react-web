@@ -1,4 +1,4 @@
-import { useLocation } from "umi";
+import { useLocation } from 'umi';
 
 interface Query {
   [key: string]: string;

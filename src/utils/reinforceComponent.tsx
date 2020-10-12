@@ -18,7 +18,7 @@ export interface IValueEnum {
  */
 
 export function reinforceColumns<T>(columns: ProColumns<T>[]): ProColumns<T>[] {
-  return columns.map((item) => {
+  return columns.map(item => {
     let newItem: ProColumns<T> = {};
 
     // 有rules时
@@ -36,7 +36,7 @@ export function reinforceColumns<T>(columns: ProColumns<T>[]): ProColumns<T>[] {
     const valueEnum = item.valueEnum;
     if (valueEnum) {
       const enumKeys = Object.keys(valueEnum);
-      const isBoolean = enumKeys.some((i) => i === 'true' || i === 'false');
+      const isBoolean = enumKeys.some(i => i === 'true' || i === 'false');
       if (isBoolean) {
         const newValueEnum = valueEnum as IValueEnum;
         const filters = [];

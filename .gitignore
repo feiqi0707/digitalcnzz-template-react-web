@@ -9,8 +9,6 @@
 
 # production
 /dist
-/.git
-/.vscode
 
 # misc
 .DS_Store
@@ -20,6 +18,4 @@
 /src/.umi-production
 /src/.umi-test
 /.env.local
-
-# jest
-coverage
+.git
