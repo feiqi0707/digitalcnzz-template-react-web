@@ -1,14 +1,6 @@
 export default [
-
   // user router
-  {
-    path: '/user',
-    component: '../layouts/simpleLayout',
-    routes: [
-      { path: '/user', redirect: '/login' },
-      { path: '/login', component: './Login' },
-    ]
-  },
+  { path: '/login', component: './Login' },
 
   // business router
   {
@@ -25,7 +17,6 @@ export default [
         exact: true,
         component: './DataAnalysis',
       },
-    ]
-  }
-
-]
+    ],
+  },
+];
