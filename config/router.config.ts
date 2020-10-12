@@ -10,10 +10,8 @@ export default [
       // dashboard
       { path: '/', redirect: '/dataAnalysis' },
       {
-        icon: 'barChart',
-        name: '数据分析',
         path: '/dataAnalysis',
-        title: 'DataAnalysis',
+        title: '数据分析',
         exact: true,
         component: './DataAnalysis',
       },
