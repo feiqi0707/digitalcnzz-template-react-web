@@ -1,6 +1,6 @@
-# digitalzz-webFront-web
+# digitalzz-xxxx-web
 
-数字郑州前端项目 Vue-React 模板
+xxx管理平台
 
 # 安装依赖环境
 

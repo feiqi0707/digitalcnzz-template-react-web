@@ -1,19 +1,42 @@
 module.exports = {
-  extends: [require.resolve('@umijs/fabric/dist/eslint')],
+  parser: 'babel-eslint',
+  extends: ['airbnb', 'prettier', 'plugin:compat/recommended'],
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+    mocha: true,
+    jest: true,
+    jasmine: true,
+  },
+  globals: {
+    APP_TYPE: true,
+    page: true,
+  },
   rules: {
-    'no-console': 0, // 禁止使用console
-    'no-debugger': 2, // 禁止使用debugger
-    'no-unused-vars': ['error'],
-    '@typescript-eslint/no-unused-vars': ['error'], // 不能有声明后未被使用的变量或参数
-    '@typescript-eslint/no-empty-function': ['warn'],
-    // 'react/jsx-filename-extension': [
-    //   1,
-    //   { extensions: ['.js', '.jsx', '.tsx'] },
-    // ],
-    // '@typescript-eslint/member-delimiter-style': 0,
-    // '@typescript-eslint/explicit-function-return-type': 0,
-    // 'jsx-quotes': ['error', 'prefer-double'],
-    // '@typescript-eslint/no-explicit-any': 0,
-    // 'react/self-closing-comp': 1,
+    'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
+    'react/jsx-wrap-multilines': 0,
+    'react/prop-types': 0,
+    'react/forbid-prop-types': 0,
+    'react/jsx-one-expression-per-line': 0,
+    'react/react-in-jsx-scope': 0,
+    'import/no-unresolved': [2, { ignore: ['^@/', '^umi/'] }],
+    'import/no-extraneous-dependencies': [
+      2,
+      {
+        optionalDependencies: true,
+        devDependencies: ['**/tests/**.js', '/mock/**.js', '**/**.test.js'],
+      },
+    ],
+    'jsx-a11y/no-noninteractive-element-interactions': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/anchor-is-valid': 0,
+    'no-nested-ternary': 0,
+    'linebreak-style': 0,
+    'no-param-reassign': 0,
+  },
+  settings: {
+    polyfills: ['fetch', 'promises', 'url'],
   },
 };

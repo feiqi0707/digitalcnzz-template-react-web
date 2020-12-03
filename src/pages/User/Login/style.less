@@ -1,0 +1,85 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .welcomeMsg {
+    width: 96px;
+    height: 24px;
+    font-size: 24px;
+    font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+    font-weight: 400;
+    color: #222222;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .tabContent {
+    height: 100%;
+    .smsCode {
+      display: flex;
+      margin-top: 20px;
+      .inputSmsCode {
+      }
+      .getSmsCode {
+        width: 90px;
+        font-size: 12px;
+      }
+    }
+    .submitLogin {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  .loginContent {
+    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+    .scanQrCodeTab {
+      height: 18px;
+      font-size: 18px;
+      font-family: SourceHanSansCN-Regular, SourceHanSansCN;
+      font-weight: 400;
+      color: #0071d9;
+      line-height: 27px;
+      .qrCode {
+        width: 200px;
+        margin: 0 auto;
+        .qrCodeImg {
+          width: 200px;
+          height: 100%;
+        }
+        .qrCodeTips {
+          font-size: 12px;
+          text-align: center;
+          font-family: SourceHanSansCN-Light, SourceHanSansCN;
+          font-weight: 300;
+          color: #555555;
+          line-height: 21px;
+        }
+        .qrCodeType {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          align-content: center;
+          text-align: center;
+          font-family: SourceHanSansCN-Normal, SourceHanSansCN;
+          color: #555555;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .submitBtn {
+    width: 200px;
+    margin-left: 60px;
+  }
+}

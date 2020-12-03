@@ -3,25 +3,23 @@ import request from '@/utils/request';
 export interface LoginParamsType {
   userName: string;
   password: string;
-}
-export interface UserInfoParamsType {
-  userid: string;
+  mobile: string;
+  captcha: string;
 }
 
-export async function queryLogin(params: LoginParamsType) {
-  return request('/api/login', {
+export async function fakeAccountLogin(params: LoginParamsType) {
+  return request('/api/login/account', {
     method: 'POST',
     data: params,
   });
 }
 
-export async function queryUserInfo(params: UserInfoParamsType) {
-  return request('/api/userInfo', {
-    method: 'POST',
-    data: params,
-  });
+export async function getFakeCaptcha(mobile: string) {
+  return request(`/api/login/captcha?mobile=${mobile}`);
 }
 
-export async function logout(): Promise<any> {
-  return request('/api/logout');
+export async function getLoginPlatformInfo() { //获取平台商信息
+  let resp = request(`/api/dbpay-platform/platformMerchant/getLoginPlatformInfo`);
+  resp = typeof resp === 'object' ? resp : JSON.parse(resp);
+  return resp;
 }
