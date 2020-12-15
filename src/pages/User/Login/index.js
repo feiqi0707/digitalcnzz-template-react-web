@@ -1,7 +1,7 @@
-import { Alert, Tabs, Form, Input, Button } from '@/pages/HomeCenter/node_modules/antd';
-import { MobileOutlined } from '@/pages/HomeCenter/AppManage/components/AppAdd/node_modules/@ant-design/icons';
+import { Alert, Tabs, Form, Input, Button } from 'antd';
+import { MobileOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
-import { connect, Dispatch } from '@/pages/HomeCenter/node_modules/umi';
+import { connect, Dispatch } from 'umi';
 import { StateType } from '@/models/login';
 import { LoginParamsType } from '@/services/login';
 import styles from './style.less';

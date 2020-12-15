@@ -1,5 +1,5 @@
 import React from 'react';
-import { Spin } from '@/pages/HomeCenter/node_modules/antd';
+import { Spin } from 'antd';
 import isEqual from 'lodash/isEqual';
 import { isComponentClass } from './Secured'; // eslint-disable-next-line import/no-cycle
 

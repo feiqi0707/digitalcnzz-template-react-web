@@ -1,4 +1,4 @@
-import { Reducer } from '@/pages/HomeCenter/node_modules/umi';
+import { Reducer } from 'umi';
 import defaultSettings, { DefaultSettings } from '../../config/defaultSettings';
 
 

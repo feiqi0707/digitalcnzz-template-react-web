@@ -1,6 +1,6 @@
-import { GlobalOutlined } from '@/pages/HomeCenter/AppManage/components/AppAdd/node_modules/@ant-design/icons';
-import { Menu } from '@/pages/HomeCenter/node_modules/antd';
-import { getLocale, setLocale } from '@/pages/HomeCenter/node_modules/umi';
+import { GlobalOutlined } from '@ant-design/icons';
+import { Menu } from 'antd';
+import { getLocale, setLocale } from 'umi';
 import React from 'react';
 import classNames from 'classnames';
 import HeaderDropdown from '../HeaderDropdown';

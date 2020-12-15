@@ -1,4 +1,4 @@
-import { Dropdown } from '@/pages/HomeCenter/node_modules/antd';
+import { Dropdown } from 'antd';
 import React from 'react';
 import classNames from 'classnames';
 import styles from './index.less';

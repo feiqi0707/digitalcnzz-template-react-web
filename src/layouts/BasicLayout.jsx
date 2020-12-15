@@ -1,7 +1,7 @@
-import ProLayout, { DefaultFooter } from '@/pages/HomeCenter/node_modules/@ant-design/pro-layout';
+import ProLayout, { DefaultFooter } from '@ant-design/pro-layout';
 import React, { useEffect } from 'react';
-import { Link, useIntl, connect } from '@/pages/HomeCenter/node_modules/umi';
-import { Result, Button } from '@/pages/HomeCenter/node_modules/antd';
+import { Link, useIntl, connect } from 'umi';
+import { Result, Button } from 'antd';
 import Authorized from '@/utils/Authorized';
 import RightContent from '@/components/GlobalHeader/RightContent';
 import { getAuthorityFromRouter } from '@/utils/utils';

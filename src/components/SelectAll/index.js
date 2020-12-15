@@ -1,5 +1,5 @@
 import React from 'react'
-import { Select } from '@/pages/HomeCenter/node_modules/antd'
+import { Select } from 'antd'
 const { Option } = Select;
 
 const SelectAll = (props) => {

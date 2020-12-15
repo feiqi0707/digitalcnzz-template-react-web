@@ -1,6 +1,6 @@
 import React from 'react';
-import { PageLoading } from '@/pages/HomeCenter/node_modules/@ant-design/pro-layout';
-import { Redirect, connect } from '@/pages/HomeCenter/node_modules/umi';
+import { PageLoading } from '@ant-design/pro-layout';
+import { Redirect, connect } from 'umi';
 import { stringify } from 'querystring';
 
 

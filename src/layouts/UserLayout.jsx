@@ -1,6 +1,6 @@
-import { DefaultFooter, getMenuData, getPageTitle } from '@/pages/HomeCenter/node_modules/@ant-design/pro-layout';
+import { DefaultFooter, getMenuData, getPageTitle } from '@ant-design/pro-layout';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Link, useIntl, connect } from '@/pages/HomeCenter/node_modules/umi';
+import { Link, useIntl, connect } from 'umi';
 import React from 'react';
 import SelectLang from '@/components/SelectLang';
 import logo from '../assets/logo.png';

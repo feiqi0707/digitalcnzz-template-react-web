@@ -1,4 +1,4 @@
-import { Effect, Reducer } from '@/pages/HomeCenter/node_modules/umi';
+import { Effect, Reducer } from 'umi';
 
 import { queryCurrent, query as queryUsers } from '@/services/user';
 

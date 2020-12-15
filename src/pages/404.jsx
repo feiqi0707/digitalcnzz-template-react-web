@@ -1,6 +1,6 @@
-import { Button, Result } from '@/pages/HomeCenter/node_modules/antd';
+import { Button, Result } from 'antd';
 import React from 'react';
-import { history } from '@/pages/HomeCenter/node_modules/umi';
+import { history } from 'umi';
 
 const NoFoundPage = () => (
   <Result

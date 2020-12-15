@@ -1,8 +1,8 @@
 {
-  "name": "{{name}}",
+  "name": "digitalcnzz-talentsmanage-web",
   "version": "1.1.0",
-  "description": "{{description}}",
-  "author": "{{author}}",
+  "description": "talents manage",
+  "author": "admin@digitalcnzz.com",
   "private": true,
   "license": "ISC",
   "scripts": {

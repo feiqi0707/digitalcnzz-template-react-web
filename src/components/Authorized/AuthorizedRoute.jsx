@@ -1,4 +1,4 @@
-import { Redirect, Route } from '@/pages/HomeCenter/node_modules/umi';
+import { Redirect, Route } from 'umi';
 import React from 'react';
 import Authorized from './Authorized';
 

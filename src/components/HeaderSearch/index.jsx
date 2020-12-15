@@ -1,5 +1,5 @@
-import { SearchOutlined } from '@/pages/HomeCenter/AppManage/components/AppAdd/node_modules/@ant-design/icons';
-import { AutoComplete, Input } from '@/pages/HomeCenter/node_modules/antd';
+import { SearchOutlined } from '@ant-design/icons';
+import { AutoComplete, Input } from 'antd';
 import useMergeValue from 'use-merge-value';
 import React, { useRef } from 'react';
 import classNames from 'classnames';

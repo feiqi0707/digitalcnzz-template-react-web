@@ -1,7 +1,7 @@
-import { Tooltip, Tag, Menu } from '@/pages/HomeCenter/node_modules/antd';
-import { QuestionCircleOutlined, Layout } from '@/pages/HomeCenter/AppManage/components/AppAdd/node_modules/@ant-design/icons';
+import { Tooltip, Tag, Menu } from 'antd';
+import { QuestionCircleOutlined, Layout } from '@ant-design/icons';
 import React, { useState } from 'react';
-import { connect, FormattedMessage } from '@/pages/HomeCenter/node_modules/umi';
+import { connect, FormattedMessage } from 'umi';
 // import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
 import HeaderDropdown from '../HeaderDropdown';

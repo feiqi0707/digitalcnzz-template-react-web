@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from '@/pages/HomeCenter/node_modules/umi';
-import { Tag, message } from '@/pages/HomeCenter/node_modules/antd';
+import { connect } from 'umi';
+import { Tag, message } from 'antd';
 import groupBy from 'lodash/groupBy';
 import moment from 'moment';
 import NoticeIcon from '../NoticeIcon';

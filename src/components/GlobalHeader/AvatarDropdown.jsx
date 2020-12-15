@@ -1,7 +1,7 @@
-import { LogoutOutlined } from '@/pages/HomeCenter/AppManage/components/AppAdd/node_modules/@ant-design/icons';
-import { Avatar, Menu } from '@/pages/HomeCenter/node_modules/antd';
+import { LogoutOutlined } from '@ant-design/icons';
+import { Avatar, Menu } from 'antd';
 import React, { Component } from 'react';
-import { connect } from '@/pages/HomeCenter/node_modules/umi';
+import { connect } from 'umi';
 import HeaderDropdown from '../HeaderDropdown';
 import styles from './index.less';
 

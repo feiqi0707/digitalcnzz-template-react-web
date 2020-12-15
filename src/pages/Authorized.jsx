@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, connect, ConnectProps } from '@/pages/HomeCenter/node_modules/umi';
+import { Redirect, connect, ConnectProps } from 'umi';
 import Authorized from '@/utils/Authorized';
 import { getRouteAuthority } from '@/utils/utils';
 import { ConnectState, UserModelState } from '@/models/connect';

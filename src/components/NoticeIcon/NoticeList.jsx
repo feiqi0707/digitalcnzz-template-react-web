@@ -1,4 +1,4 @@
-import { Avatar, List } from '@/pages/HomeCenter/node_modules/antd';
+import { Avatar, List } from '@ant-design/icons';
 import React from 'react';
 import classNames from 'classnames';
 import styles from './NoticeList.less';

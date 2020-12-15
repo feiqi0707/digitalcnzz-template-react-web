@@ -1,4 +1,4 @@
-import { history, Reducer, Effect } from '@/pages/HomeCenter/node_modules/umi';
+import { history, Reducer, Effect } from 'umi';
 import { stringify } from 'qs'
 import { fakeAccountLogin } from '@/services/login';
 import { setAuthority } from '@/utils/authority';
