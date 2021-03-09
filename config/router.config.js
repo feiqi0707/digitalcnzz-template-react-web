@@ -20,9 +20,13 @@ export default [
         authority: ['admin', 'user'],
         routes: [
           {
+            path: '/',
+            redirect: '/payMethods',
+          },
+          {
             name: 'home',
             icon: 'appstore',
-            path: '/',
+            path: '/home',
             component: './HomeCenter',
           },
           {
