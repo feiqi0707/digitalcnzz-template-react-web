@@ -1,5 +1,5 @@
 {
-  "name": "{{name}}",
+  "name": "name",
   "version": "1.1.0",
   "description": "{{description}}",
   "author": "{{author}}",
@@ -31,6 +31,7 @@
     "bizcharts": "^3.4.3",
     "bizcharts-plugin-slider": "^2.1.1-beta.1",
     "classnames": "^2.2.6",
+    "dayjs": "^1.10.4",
     "dva": "^2.4.1",
     "echarts": "^4.9.0",
     "echarts-for-react": "^2.0.16",
