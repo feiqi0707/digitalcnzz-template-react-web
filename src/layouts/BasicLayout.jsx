@@ -89,6 +89,7 @@ const BasicLayout = props => {
 
         return <Link to={menuItemProps.path}>{defaultDom}</Link>;
       }}
+
       breadcrumbRender={(routers = []) => [
         {
           path: '/',
@@ -103,8 +104,8 @@ const BasicLayout = props => {
         return first ? (
           <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
         ) : (
-            <span>{route.breadcrumbName}</span>
-          );
+          <span>{route.breadcrumbName}</span>
+        );
       }}
       // footerRender={() => defaultFooterDom}
       menuDataRender={menuDataRender}

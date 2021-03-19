@@ -5,7 +5,7 @@ import styles from './index.less';
 import { Table, Form, Input, Button, Popconfirm } from 'antd';
 import Item from 'antd/lib/list/Item';
 
-const HomeCenter = props => {
+const Dashboard = props => {
 
   const { dispatch } = props;
 
@@ -13,11 +13,11 @@ const HomeCenter = props => {
     <PageHeaderWrapper>
       <div className={styles.content}>
 
-        HomeCenter
+        Dashboard
 
       </div>
     </PageHeaderWrapper>
   );
 }
 
-export default HomeCenter;
+export default Dashboard;

@@ -21,13 +21,13 @@ export default [
         routes: [
           {
             path: '/',
-            redirect: '/payMethods',
+            redirect: '/dashboard',
           },
           {
-            name: 'home',
+            name: 'dashboard',
             icon: 'appstore',
-            path: '/home',
-            component: './HomeCenter',
+            path: '/dashboard',
+            component: './Dashboard',
           },
           {
             component: './404',

@@ -23,11 +23,11 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.0.0",
+    "@ant-design/icons": "4.6.0",
     "@ant-design/pro-layout": "^5.0.8",
     "@ant-design/pro-table": "2.2.9",
-    "antd": "4.2.5",
-    "antd-dayjs-webpack-plugin": "^1.0.1",
+    "antd": "4.11.0",
+    "antd-dayjs-webpack-plugin": "^1.0.6",
     "bizcharts": "^3.4.3",
     "bizcharts-plugin-slider": "^2.1.1-beta.1",
     "classnames": "^2.2.6",
@@ -44,7 +44,7 @@
     "path-to-regexp": "2.4.0",
     "qiniu-js": "^2.5.5",
     "qs": "^6.9.0",
-    "react": "^16.8.6",
+    "react": "16.14.0",
     "react-dnd": "^10.0.2",
     "react-dnd-html5-backend": "^10.0.2",
     "react-dom": "^16.8.6",
