@@ -5,17 +5,17 @@ import styles from './index.less';
 import { Table, Form, Input, Button, Popconfirm } from 'antd';
 import Item from 'antd/lib/list/Item';
 
-const Dashboard = props => {
+const Child = props => {
 
   const { dispatch } = props;
 
   return (
     <PageHeaderWrapper>
       <div className={styles.content}>
-        Dashboard
+        Child
       </div>
     </PageHeaderWrapper>
   );
 }
 
-export default Dashboard;
+export default Child;

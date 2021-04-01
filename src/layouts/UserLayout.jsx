@@ -1,6 +1,6 @@
 import { DefaultFooter, getMenuData, getPageTitle } from '@ant-design/pro-layout';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Link, useIntl, connect } from 'umi';
+import { Link, useIntl, connect, history } from 'umi';
 import React from 'react';
 import SelectLang from '@/components/SelectLang';
 import logo from '../assets/logo.png';
@@ -31,7 +31,7 @@ const UserLayout = props => {
   return (
     <div className={styles.userContainer}>
       <div className={styles.userHeader}>
-        <img src={mainLogo} className={styles.mainLogo}></img>
+        <img src={mainLogo} className={styles.mainLogo} onClick={history.push('/')}></img>
       </div>
       <div className={styles.container}>
         <div className={styles.loginForm}>

@@ -6,6 +6,7 @@ import Authorized from '@/utils/Authorized';
 import RightContent from '@/components/GlobalHeader/RightContent';
 import { getAuthorityFromRouter } from '@/utils/utils';
 import logo from '../../public/favicon.png';
+import styles from './BasicLayout.less'
 
 const noMatch = (
   <Result
@@ -75,12 +76,12 @@ const BasicLayout = props => {
     <ProLayout
       logo={logo}
       formatMessage={formatMessage}
-      menuHeaderRender={(logoDom, titleDom) => (
-        <Link to="/">
-          {logoDom}
-          {titleDom}
-        </Link>
-      )}
+      // menuHeaderRender={(logoDom, titleDom) => (
+      //   <Link to="/">
+      //     {logoDom}
+      //     {titleDom}
+      //   </Link>
+      // )}
       onCollapse={handleMenuCollapse}
       menuItemRender={(menuItemProps, defaultDom) => {
         if (menuItemProps.isUrl || (menuItemProps.children && menuItemProps.children.length) > 0 || !menuItemProps.path) {

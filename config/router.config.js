@@ -30,6 +30,19 @@ export default [
             component: './Dashboard',
           },
           {
+            name: 'parent',
+            icon: 'appstore',
+            path: '/parent',
+            routes: [
+              {
+                name: 'child',
+                icon: 'appstore',
+                path: 'child',
+                component: './Parent/Child',
+              },
+            ]
+          },
+          {
             component: './404',
           },
         ],

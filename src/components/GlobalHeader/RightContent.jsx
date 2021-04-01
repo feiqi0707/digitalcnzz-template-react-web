@@ -2,7 +2,7 @@ import { Tooltip, Tag, Menu } from 'antd';
 import { QuestionCircleOutlined, Layout } from '@ant-design/icons';
 import React, { useState } from 'react';
 import { connect, FormattedMessage } from 'umi';
-// import Avatar from './AvatarDropdown';
+import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
 import HeaderDropdown from '../HeaderDropdown';
 import SelectLang from '../SelectLang';
@@ -72,7 +72,7 @@ const GlobalHeaderRight = props => {
         </a>
       </Tooltip> */}
       {
-        // <Avatar />
+        <Avatar />
       }
       {
         // REACT_APP_ENV && (
